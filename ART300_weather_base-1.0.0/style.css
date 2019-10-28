@@ -1,0 +1,859 @@
+.degree_symbol:not(:empty)::after {
+    content: "°"
+}
+
+.owm-legend-item{
+    display: none;
+}
+
+#map {
+	width: 600px;
+    height: 600px;
+}
+
+.container1:nth-child(odd){
+    width: auto;
+    height: 50vh;
+    background-color: lawngreen;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+     
+
+}
+.gradientday1 {
+    width: auto;
+    height: 50vh;
+    background-color: #555;
+  
+}
+.alerts {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: red;
+    margin-top:-320px;
+    margin-left: 30px;
+    
+
+}
+.sun {
+    margin-left: 20px;
+}
+.weathertext {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: -27px;
+    margin-left: 35px;
+
+}
+h1 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -45px;
+    font-size: 77px;
+    margin-left: 35px;
+}
+.feels {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -110px;
+    margin-left: 155px;
+
+}
+.highlow {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -20px;
+    margin-left: 153px;
+
+}
+.date {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: -15px;
+    margin-left: 33px;
+    font-size: 20px;
+
+}
+.time {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -24px;
+    margin-left: 30px;
+    font-size: 20px;
+
+}
+#zip_display {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -294px;
+    margin-left: 1190px;
+}
+.location {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    margin-top: 305px;
+    margin-left: 3px;
+    font-size: 35px;
+
+}
+.dailyinfo {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -40px;
+    margin-left: 3px;
+    font-size: 15px;
+
+}
+.precipitation {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+.drop {
+    width: 90px;
+    height: 90px;
+    margin-top: -29px;
+    margin-left: 1px;
+}
+.numbpercent {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -62px;
+    margin-left: 65px;
+    font-size: 27px;
+}
+.snow {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -94px;
+    margin-left: 150px;
+    font-size: 12px;
+}
+.flake {
+    width: 100px;
+    height: 100px;
+    margin-top: -28px;
+    margin-left: 114px;
+}
+.numbpercent2 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -72px;
+    margin-left: 185px;
+    font-size: 27px;
+}
+.hum {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 35px;
+    margin-left: 30px;
+    font-size: 12px;
+}
+.thermometer {
+    width: 90px;
+    height: 90px;
+    margin-top: -29px;
+    margin-left: 1px;
+}
+.numbpercent3 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -62px;
+    margin-left: 65px;
+    font-size: 27px;
+}
+.wind {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -93px;
+    margin-left: 150px;
+    font-size: 12px;
+}
+.breeze {
+    width: 100px;
+    height: 100px;
+    margin-top: -28px;
+    margin-left: 114px;
+}
+.numbpercent4 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -72px;
+    margin-left: 187px;
+    font-size: 27px;
+}
+.date1 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 391px;
+    margin-top: -300px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    
+}
+.daily {
+    display: inline;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+   
+}
+
+#day1 {
+    width: 140px;
+    height: 270px;
+    background-color: lightcoral;
+    margin-left: 350px;
+    margin-top: -120px;
+
+}
+
+.strike {
+    width: 100px;
+    height: 100px;
+    margin-top: 87px;
+    margin-left: 16px;
+}
+.dailytemp1 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -20px;
+    margin-left: 35px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.drop2 {
+    width: 80px;
+    height: 80px;
+    margin-top: -70px;
+    margin-left: 325px;
+}
+.numbpercent5 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 43px;
+    margin-left: 27px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+#day2 {
+    width: 140px;
+    height: 270px;
+    background-color: rgb(252, 89, 0);
+    margin-left: 509px;
+    margin-top: -127px;
+
+}
+.date2 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -219px;
+    margin-left: 555px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.cloud {
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 19px;
+}
+.dailytemp2 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -14px;
+    margin-left: 38px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.numbpercent6 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 42px;
+    margin-left: 27px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+.drop3 {
+    width: 80px;
+    height: 80px;
+    margin-top: -70px;
+    margin-left: 485px;
+}
+#day3 {
+    width: 140px;
+    height: 270px;
+    background-color: lightseagreen;
+    margin-left: 666px;
+    margin-top: -126px;
+
+}
+.date3 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -219px;
+    margin-left: 710px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.mix {
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 19px;
+}
+.dailytemp3 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -14px;
+    margin-left: 38px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.numbpercent7 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 42px;
+    margin-left: 27px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+.drop4 {
+    width: 80px;
+    height: 80px;
+    margin-top: -70px;
+    margin-left: 640px;
+}
+#day4 {
+    width: 140px;
+    height: 270px;
+    background-color: rgb(49, 66, 65);
+    margin-left: 820px;
+    margin-top: -128px;
+
+}
+.date4 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -219px;
+    margin-left: 872px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.cloud2 {
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 19px;
+}
+.dailytemp4 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -14px;
+    margin-left: 38px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.numbpercent8 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 42px;
+    margin-left: 27px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+#day5 {
+    width: 140px;
+    height: 270px;
+    background-color: rgb(33, 150, 142);
+    margin-left: 975px;
+    margin-top: -126px;
+
+}
+.date5 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -219px;
+    margin-left: 1028px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.drop5 {
+    width: 80px;
+    height: 80px;
+    margin-top: -70px;
+    margin-left: 795px;
+}
+.cloud3 {
+    width: 100px;
+    height: 100px;
+    margin-top: 80px;
+    margin-left: 19px;
+}
+
+.dailytemp5 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -14px;
+    margin-left: 38px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.numbpercent9 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 42px;
+    margin-left: 27px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+.drop6 {
+    width: 80px;
+    height: 80px;
+    margin-top: -70px;
+    margin-left: 949px;
+}
+#day6 {
+    width: 140px;
+    height: 270px;
+    background-color: magenta;;
+    margin-left: 1130px;
+    margin-top: -126px
+
+}
+.date6 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -219px;
+    margin-left: 1179px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.sun2 {
+    width: 91px;
+    height: 91px;
+    margin-top: 87px;
+    margin-left: 26px;
+}
+.dailytemp6 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 38px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.numbpercent10 {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 45px;
+    margin-left: 27px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+.drop7 {
+    width: 80px;
+    height: 80px;
+    margin-top: -70px;
+    margin-left: 1104px;
+}
+.dot1 {
+    height: 20px;
+    width: 20px;
+    background-color: #3BD2D8;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 440px;
+    margin-top: 15px;
+}
+.dew {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -73px;
+    margin-left: 466px;
+    font-size: 20px;
+
+}
+.dewnumber {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -46px;
+    margin-left: 570px;
+    font-size: 20px;
+
+}
+.dot2 {
+    height: 20px;
+    width: 20px;
+    background-color: #6C4EB1;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 550px;
+    margin-top: 20px;
+}
+.pressure {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -2px;
+    margin-left: 576px;
+    font-size: 20px;
+
+}
+.pressurenumber {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -46px;
+    margin-left: 668px;
+    font-size: 20px;
+
+}
+.air {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -89px;
+    margin-left: 740px;
+    font-size: 20px;
+
+}
+.airnumber {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -46px;
+    margin-left: 845px;
+    font-size: 20px;
+
+}
+.dot3 {
+    height: 20px;
+    width: 20px;
+    background-color: #3BD87D;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 250px;
+    margin-top: -5px;
+}
+.uv {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -145px;
+    margin-left: 740px;
+    font-size: 20px;
+
+}
+.uvnumber {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -46px;
+    margin-left: 830px;
+    font-size: 20px;
+
+}
+.dot4 {
+    height: 20px;
+    width: 20px;
+    background-color: #CDD0B2;
+    border-radius: 50%;
+    float: left;
+    margin-left: 850px;
+    margin-top: -22px;
+}
+.uv {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -42px;
+    margin-left: 1055px;
+    font-size: 20px;
+
+}
+.uvnumber {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -46px;
+    margin-left: 1145px;
+    font-size: 20px;
+
+}
+.dot5 {
+    height: 20px;
+    width: 20px;
+    background-color: #E36E24;
+    border-radius: 50%;
+    margin-left: 1030px;
+    margin-top: -65px;
+    float: left;
+}
+.visible {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: -26px;
+    font-size: 20px;
+    margin-right: 340px;
+    float: right;
+
+}
+.visiblenumber {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -45px;
+    margin-left: 970px;
+    font-size: 20px;
+    float: left;
+
+}
+.sstext {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 193px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.sunphase {
+    display: inline;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.sun3 {
+    width: 130px;
+    height: 130px;
+    margin-top: -184px;
+    margin-left: 280px;
+}
+.sunrise {
+    width: 130px;
+    height: 130px;
+    margin-top: 15px;
+    margin-left: 90px;
+}
+.sunset {
+    width: 150px;
+    height: 150px;
+    margin-top: -187px;
+    margin-left: 490px;
+}
+.line {
+    width: 30%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transform: rotate(50deg);
+    border-color: rgb(0, 0, 0);
+}
+.mtext {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 650px;
+    font-size: 25px;
+    margin-top: -52px;
+}
+.moonphase {
+    display: inline;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.fullmoon {
+    width: 130px;
+    height: 130px;
+    margin-top: -270px;
+    margin-left: 690px;
+    float: left;
+}
+.wanmoon1 {
+    width: 130px;
+    height: 130px;
+    margin-top: -270px;
+    margin-left: 760px;
+    float: left;
+}
+.halfmoon1 {
+    width: 130px;
+    height: 130px;
+    margin-top: -270px;
+    margin-left: 815px;
+    float: left;
+}
+.waning1 {
+    width: 130px;
+    height: 130px;
+    margin-top: -270px;
+    margin-left: 855px;
+    float: left;
+}
+.newmoon {
+    width: 130px;
+    height: 130px;
+    margin-top: -270px;
+    margin-left: 915px;
+    float: left;
+}
+.waning2 {
+    width: 130px;
+    height: 130px;
+    margin-top: -268px;
+    margin-left: 978px;
+    float: left;
+}
+.halfmoon2 {
+    width: 130px;
+    height: 130px;
+    margin-top: -268px;
+    margin-left: 1025px;
+    float: left;
+}
+.wanmoon2 {
+    width: 130px;
+    height: 130px;
+    margin-top: -272px;
+    margin-left: 1078px;
+    float: left;
+}
+.sunrisetime {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 105px;
+    font-size: 25px;
+    margin-top: -65px;
+}
+.sunsettime {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 516px;
+    font-size: 25px;
+    margin-top: -58px;
+}
+.phase {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 976px;
+    font-size: 15px;
+    margin-top: -163px;
+}
+.weatherradar {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 40px;
+    font-size: 25px;
+    margin-top: 198px;
+}
+.radar {
+    width: 800px;
+    height: 500px;
+    margin-top: -25px;
+    margin-left: 40px;
+   
+}
+.weatheralerts {
+    font-family: roboto-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 850px;
+    font-size: 25px;
+    margin-top: -512px;
+}
+.weatherhead {
+    font-family: roboto-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 850px;
+    font-size: 15px;
+    margin-top: -12px;
+    color: red;
+}
+.alerttext{
+    font-family: roboto-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 850px;
+    font-size: 15px;
+    margin-top: -12px;
+   
+}
+
+#meta {
+    margin-top: 1px;
+}
+.locationname {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 155px;
+    margin-left: 40px;
+   
+}
+.locationcordlong {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 40px;
+   
+}
+.locationcordlat {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: -15px;
+    margin-left: 40px;
+   
+}

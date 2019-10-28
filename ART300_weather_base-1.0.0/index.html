@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather</title>
+
+        <script src="/js/libraries/vue.min.js"></script>
+        <script src="keys.js"></script>
+        <script src="/js/moon.js"></script>
+
+        <link rel="stylesheet" href="/js/libraries/leaflet/leaflet.css" />
+        <link rel="stylesheet" href="/js/libraries/leaflet/leaflet-openweathermap.css" />
+        <link rel="stylesheet" href="/js/libraries/leaflet/leaflet-languageselector.css" />
+
+        <script src="/js/libraries/leaflet/leaflet.js"></script>
+        <script src="/js/libraries/leaflet/Permalink.js"></script>
+        <script src="/js/libraries/leaflet/Permalink.Layer.js"></script>
+        <script src="/js/libraries/leaflet/Permalink.Overlay.js"></script>
+        <script src="/js/libraries/leaflet/leaflet-openweathermap.js"></script>
+        <script src="/js/libraries/leaflet/leaflet-languageselector.js"></script>
+
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/forcast.css">
+        <link rel="stylesheet" href="https://use.typekit.net/nrv6oiz.css">
+
+
+    </head>
+
+    <body>
+        
+
+        <div class="contianer1">
+
+            <div class="gradientday1"></div>
+        
+            <div class="info1">
+                <p class="alerts">Alerts - Flood Warning</p>
+            </div>
+            <div class="sun">
+                <img src="img/sun-01.png" alt="sun" width="110px">
+            </div>
+            <div>
+                <p class="weathertext">Sunny</p>
+            </div>
+            <div>
+                <h1 class="current.description_main">72º</h1>
+                <p class="feels">Feels Like 70º</p>
+                <p class="highlow">77º/50º</p>
+            </div>
+            <div>
+                <p class="date">Mon 14, 2019</p>
+                <p class="time">1:31 PM</p>
+            </div>
+           
+            <p id="zip_display">Zip Code</p>
+    
+            <p class="location">Manhattan, KS</p>
+            <p class="dailyinfo">Today: Sunnry currently. The high will<br> be 77º. Clear tonight with a low of 50º</p>
+        </div>
+
+        <div class="container2">
+            <div id="smallbox1"> 
+                <p class="precipitation">Precipitation</p>
+                <img src="img/09d.png" class="drop" alt="Raindrop">
+                <p class="numbpercent">0%</p>
+            </div>
+            <div id="smallbox2"> 
+                <p class="snow">Snow</p>
+                <img src="img/13d.png" class="flake" alt="Snowflake">
+                <p class="numbpercent2">0%</p>
+            </div>
+            <div id="smallbox3"> 
+                <p class="hum">Humidity</p>
+                <img src="img/temp.png" class="thermometer" alt="Humidity">
+                <p class="numbpercent3">36%</p>
+            </div>
+            <div id="smallbox4"> 
+                <p class="wind">Wind</p>
+                <img src="img/wind.png" class="breeze" alt="Wind">
+                <p class="numbpercent4">SSW/15 MPH</p>
+            </div>
+        </div>
+        <div>
+            <p class="date1">Tues</p>
+        </div>
+        <div class="daily">
+            <div id="day1">
+                <div>
+                    <img src="img/11d.png" class="strike" alt="Lightening">
+                    <p class="dailytemp1"> 60º/55º</p>
+                </div>
+                <div>
+                    <p class="numbpercent5">100%</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/09d.png" class="drop2" alt="Raindrop">
+            </div>
+            <div>
+                <p class="date2">Wed</p>
+            </div>
+            <div id="day2">
+                <div>
+                    <img src="img/03d.png" class="cloud" alt="Cloudy">
+                    <p class="dailytemp2"> 65º/50º</p>
+                </div>
+                <div>
+                    <p class="numbpercent6">70%</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/09d.png" class="drop3" alt="Raindrop">
+            </div>
+            <div>
+                <p class="date3">Thur</p>
+            </div>
+            <div id="day3">
+                <div>
+                    <img src="img/sunclouds.png" class="mix" alt="Sun/Clouds">
+                    <p class="dailytemp3"> 68º/47º</p>
+                </div>
+                <div>
+                    <p class="numbpercent7">30%</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/09d.png" class="drop4" alt="Raindrop">
+            </div>
+            <div>
+                <p class="date4">Fri</p>
+            </div>
+            <div id="day4">
+                <div>
+                    <img src="img/03d.png" class="cloud2" alt="Cloudy">
+                    <p class="dailytemp4"> 71º/49º</p>
+                </div>
+                <div>
+                    <p class="numbpercent8">70%</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/09d.png" class="drop5" alt="Raindrop">
+            </div>
+            <p class="date5">Sat</p>
+            <div id="day5">
+                <div>
+                    <img src="img/03d.png" class="cloud3" alt="Cloudy">
+                    <p class="dailytemp5"> 56º/55º</p>
+                </div>
+                <div>
+                    <p class="numbpercent9">60%</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/09d.png" class="drop6" alt="Raindrop">
+            </div>
+            <p class="date6">Sun</p>
+            <div id="day6">
+                <div>
+                    <img src="img/sun-01.png" class="sun2" alt="sun">
+                    <p class="dailytemp6">71º/49º</p>
+                </div>
+                <div>
+                    <p class="numbpercent10">0%</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="img/09d.png" class="drop7" alt="Raindrop">
+        </div>
+        <span class="dot1"></span>
+        <span class="dot3"></span>
+        <span class="dot2"></span>
+        <span class="dot5"></span>
+        <span class="dot4"></span>
+        <div>
+            <div id="dewinfo">
+                <p class="dew">Dew Point:</p>
+                <p class="dewnumber">47 F</p>
+            </div>
+            <div id="pressureinfo">
+                <p class="pressure">Pressure:</p>
+                <p class="pressurenumber">30.22 inHG</p>
+            </div>
+            <div id="airinfo">
+                <p class="air">Air Quality:</p>
+                <p class="airnumber">Good/44</p>
+            </div>
+           
+            <div id="uvinfo">
+                <p class="uv">UV Index:</p>
+                <p class="uvnumber">Moderate/5</p>
+            </div>
+            <div id="visibleinfo">
+                <p class="visible">Visibility:</p>
+                <p class="visiblenumber">10 miles</p>
+            </div>
+        </div>
+        
+        <div>
+            <p class="sstext">Sunrise/Sunset</p>
+        </div>
+        <div>
+                <p class="mtext">Moon Phase</p>
+            </div>
+        <div class="sunphase">
+            <div>
+                <img src="img/sun-01.png" class="sun3" alt="sun">
+            </div>
+            <div>
+                <hr class="line"></hr>
+            </div>
+            <div>
+                <img src="img/Untitled-8-10.png" class="sunrise" alt="sunrise">
+            </div>
+            <div>
+                <img src="img/Untitled-19-09.png" class="sunset" alt="sunset">
+            </div>
+        </div>
+   
+
+        <div class="moonphase">
+            <div>
+                <img src="img/01n.png" class="fullmoon" alt="fullmoon">
+            </div>
+            <div>
+                <img src="img/wan.png" class="wanmoon1" alt="waningmoon">
+            </div>
+            <div>
+                <img src="img/Untitled-8-05.png" class="halfmoon1" alt="halfmoon">
+            </div>
+            <div>
+                <img src="img/small.png" class="waning1" alt="waninggibbous">
+            </div>
+            <div>
+                <img src="img/nomoon-25.png" class="newmoon" alt="newmoon">
+            </div>
+            <div>
+                <img src="img/Untitled-8-03.png" class="waning2" alt="waninggibbous">
+            </div>
+            <div>
+                <img src="img/half.png" class="halfmoon2" alt="halfmoon">
+            </div>
+            <div>
+                <img src="img/Untitled-8-07.png" class="wanmoon2" alt="waningmoon">
+            </div>
+
+        </div>
+        <div>
+            <p class="sunrisetime">7:36 AM</p>
+        </div>
+        <div>
+            <p class="sunsettime">6:46 PM</p>
+        </div>
+        <div>
+            <p class="phase">Waning Gibbous</p>
+        </div>
+
+        <div>
+            <p class="weatherradar">Weather Radar</p>
+        </div>
+        <div>
+            <img src="img/map.png" class="radar" alt="radar">
+        </div>
+        <div>
+            <p class="weatheralerts">Weather Alerts</p>
+        </div>
+        <div>
+            <p class="weatherhead">Flood - Warning from 10/15/2019 9:06:00 AM to 10/17/2019 1:00:00 PM</p>
+            <p class="alerttext">Flood Warning issued October 15 at 9:06AM CDT <br>until October 17 at 1:00PM CDT by NWS Topeka
+                    Riley<br>
+                    ...The Flood Warning continues for the following<br> streams in Kansas..<br>
+                    Big Blue River near Blue Rapids affecting<br> Marshall County
+                    Fancy Creek near Randolph <br>affecting Riley County
+                    The Flood Warning <br>continues for
+                    The Fancy Creek near Randolph.<br>
+                    * until Thursday afternoon.<br>
+                    * At 8:15 AM Tuesday the stage was 16.5 feet.<br>
+                    * Flood stage is 16.0 feet.<br>
+                    * Minor flooding is occurring and Minor flooding <br>is forecast.
+                    * Impact...At 16.0 feet...Low lying<br> areas along the creek flood.</p>
+        </div>
+
+        <div id="meta">
+            <div>
+                <p class="locationname">Manhattan, KS</p>
+            </div>
+            <div>
+                <p class="locationcordlong">Long: -96.56184º E</p>
+            </div>
+            <div>
+                <p class="locationcordlat">Lat: 39.17881º N</p>
+            </div>
+        </div>
+    
+       
+        
+       
+        
+        
+       
+
+
+
+
+
+
+       <!--  <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
+        <p id="zip_display"></p>
+ -->
+<!-- 
+        <div class="results" id="app">
+            <h1>TIME</h1>
+            <p>{{time.day}}</p>
+            <p>{{time.date}}</p>
+            <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>
+            <p>{{time.moom}}</p> -->
+<!-- 
+            <h1>META</h1>
+            <p>{{city}}</p>
+
+            <p>{{location.zip}}</p>
+            <p>{{location.coord.lat}}</p>
+            <p>{{location.coord.lon}}</p>
+            <p>{{location.name}}</p>
+
+            <p>{{error}}</p>
+
+
+           // <h1>CURRENT</h1>
+            
+            <p>{{current.description_long}}</p>
+            <p>{{current.description_icon}}</p>
+
+            <p class="degree_symbol">{{current.temp.current}}</p>
+            <p class="degree_symbol">{{current.temp.high}}</p>
+            <p class="degree_symbol">{{current.temp.low}}</p>
+
+            <p>{{current.wind.speed}}</p>
+            <p class="degree_symbol">{{current.wind.degree}}</p>
+            <p>{{current.cloud_cover}}</p>
+
+            <p>{{current.rain}}</p>
+            <p>{{current.snow}}</p>
+
+            <p>{{current.sunrise}}</p>
+            <p>{{current.sunset}}</p>
+
+
+            <h1>HOURLY</h1>
+            <h4>Hour 1</h4>
+            <p>{{hourly[0].isDaytime ? 'Day' : 'Night' }}</p>
+            <p>{{hourly[0].number}}</p>
+            <p>{{hourly[0].shortForecast}}</p>
+            <p>{{hourly[0].startTime}}</p>
+            <p class="degree_symbol">{{hourly[0].temperature}}</p>
+            <p>{{hourly[0].emperatureTrend}}</p>
+            <p>{{hourly[0].windSpeed}}</p>
+            <p>{{hourly[0].windDirection}}</p>
+
+            <h1>FORECAST</h1>
+            <h4>Day 1</h4>
+            <p  class="degree_symbol">High - {{forecast[0].max_temp}}</p>
+            <p  class="degree_symbol">Low - {{forecast[0].min_temp}}</p>
+            <p>{{forecast[0].uv}}</p>
+            <p>{{forecast[0].weather.description}}</p>
+
+            <p>{{forecast[0].wind_spd}} mph</p>
+            <p>{{forecast[0].wind_cdir_full}}</p>
+            <p>{{forecast[0].wind_cdir}}</p>
+
+            <p>{{forecast[0].vis}}</p>
+
+            <p>{{forecast[0].pop}}</p>
+
+            <p>{{forecast[0].precip}}</p>
+
+            <p>{{forecast[0].snow}}</p>
+
+            <p>{{forecast[0].dewpt}}</p>
+            <p>{{forecast[0].pres}} mb</p> -->
+
+      <!--   </div>
+        <div id="map"></div> -->
+
+
+
+
+        <script src="/js/script.js" type="module"></script>
+    </body>
+</html>
